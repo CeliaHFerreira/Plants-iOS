@@ -14,6 +14,7 @@
 		2D494F732617379A00DF7DBD /* Plants_iOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2D494F712617379A00DF7DBD /* Plants_iOS.xcdatamodeld */; };
 		2D494F752617379B00DF7DBD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D494F742617379B00DF7DBD /* Assets.xcassets */; };
 		2D494F782617379B00DF7DBD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D494F762617379B00DF7DBD /* LaunchScreen.storyboard */; };
+		4A13351E1EF4544EF8DCECEE /* Pods_Plants_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7275CBFB62539AF3421C516A /* Pods_Plants_iOS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,9 @@
 		2D494F742617379B00DF7DBD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2D494F772617379B00DF7DBD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2D494F792617379B00DF7DBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7275CBFB62539AF3421C516A /* Pods_Plants_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Plants_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBFF08A05C2BF8201EBA04FB /* Pods-Plants-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Plants-iOS.debug.xcconfig"; path = "Target Support Files/Pods-Plants-iOS/Pods-Plants-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		FC0D38869574EC105BB40AA3 /* Pods-Plants-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Plants-iOS.release.xcconfig"; path = "Target Support Files/Pods-Plants-iOS/Pods-Plants-iOS.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +37,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A13351E1EF4544EF8DCECEE /* Pods_Plants_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		153F273C4C86FAD4F210B1C9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7275CBFB62539AF3421C516A /* Pods_Plants_iOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		2D494F5C2617379900DF7DBD = {
 			isa = PBXGroup;
 			children = (
 				2D494F672617379900DF7DBD /* Plants-iOS */,
 				2D494F662617379900DF7DBD /* Products */,
+				D6E41CEF5592ADBF4F8DC0BC /* Pods */,
+				153F273C4C86FAD4F210B1C9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,6 +85,16 @@
 			path = "Plants-iOS";
 			sourceTree = "<group>";
 		};
+		D6E41CEF5592ADBF4F8DC0BC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CBFF08A05C2BF8201EBA04FB /* Pods-Plants-iOS.debug.xcconfig */,
+				FC0D38869574EC105BB40AA3 /* Pods-Plants-iOS.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,9 +102,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2D494F7C2617379B00DF7DBD /* Build configuration list for PBXNativeTarget "Plants-iOS" */;
 			buildPhases = (
+				687F5248098E9DFE0E35D66C /* [CP] Check Pods Manifest.lock */,
 				2D494F612617379900DF7DBD /* Sources */,
 				2D494F622617379900DF7DBD /* Frameworks */,
 				2D494F632617379900DF7DBD /* Resources */,
+				7FFD3D0AEE645CD25410B7FA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -134,6 +161,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		687F5248098E9DFE0E35D66C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Plants-iOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7FFD3D0AEE645CD25410B7FA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Plants-iOS/Pods-Plants-iOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Plants-iOS/Pods-Plants-iOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Plants-iOS/Pods-Plants-iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2D494F612617379900DF7DBD /* Sources */ = {
@@ -287,6 +356,7 @@
 		};
 		2D494F7D2617379B00DF7DBD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CBFF08A05C2BF8201EBA04FB /* Pods-Plants-iOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -305,6 +375,7 @@
 		};
 		2D494F7E2617379B00DF7DBD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC0D38869574EC105BB40AA3 /* Pods-Plants-iOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
