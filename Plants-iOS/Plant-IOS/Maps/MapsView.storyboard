@@ -8,20 +8,30 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Maps View Model-->
+        <!--Item-->
         <scene sceneID="DCc-Jj-rTa">
             <objects>
-                <viewController storyboardIdentifier="MapViewID" useStoryboardIdentifierAsRestorationIdentifier="YES" id="OUn-Bi-VqU" customClass="MapsViewModel" customModule="Plant_IOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MapViewID" useStoryboardIdentifierAsRestorationIdentifier="YES" id="OUn-Bi-VqU" customClass="MapsViewController" customModule="Plant_IOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DxD-K2-D2B">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hola" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1l9-GW-RBY">
+                                <rect key="frame" x="186" y="374" width="35" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="wQe-Wb-MTa"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="oNR-tI-YV6"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h91-fM-ahz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="36" y="125"/>
+            <point key="canvasLocation" x="944.92753623188412" y="124.55357142857142"/>
         </scene>
     </scenes>
     <resources>

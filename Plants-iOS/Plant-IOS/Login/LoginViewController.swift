@@ -1,8 +1,8 @@
 //
-//  LoginViewModel.swift
-//  Plants-iOS
+//  LoginViewController.swift
+//  Plant-IOS
 //
-//  Created by Celia Herrera Ferreira on 07/04/2021.
+//  Created by Celia Herrera Ferreira on 26/04/2021.
 //
 
 import Foundation
@@ -10,10 +10,12 @@ import UIKit
 import FirebaseAnalytics
 import FirebaseAuth
 
-class LoginViewModel: UIViewController {
-    
+class LoginViewController: UIViewController {
+
     @IBOutlet weak var emailText: UITextField!
     @IBOutlet weak var passwordText: UITextField!
+    
+    let router = EnrolmentRouter()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,21 +24,22 @@ class LoginViewModel: UIViewController {
         //Analytucs Event
         Analytics.logEvent("LoginView", parameters: ["message" : "Iniciada pantalla de Login"])
     }
+   
+        
     
-    //Caso de pulsar un boton
-    //Checkeariamos si el email y la contraseña cumplen los estandares que queramos y lo mandariamos a firebase
     @IBAction func loginButton(_ sender: Any) {
         if let email = emailText.text, let password = passwordText.text {
             //Checkeamos si son validos por un validator...
             Auth.auth().signIn(withEmail: email, password: password) { (result, error) in
+                
                 if let result = result, error == nil {
                     //Llamamos al router para mandarnos a la pantalla de listado
-                    let storyBoard : UIStoryboard = UIStoryboard(name: "ListPlantsView", bundle:nil)
-                    let nextViewController = storyBoard.instantiateViewController(withIdentifier: "ListPlantsID") as! ListPlantsViewModel
-                    self.navigationController?.setNavigationBarHidden(true, animated: true)
+                    UserDefaults.standard.set(true, forKey: "isNotLogged")
+                    UserDefaults.standard.synchronize()
 
-                    self.show(nextViewController, sender: self)
-                    print("hola")
+                    self.router.go2TabBar(initial: self)
+
+
                 } else {
                     //Gestionamos error
                     let alertController = UIAlertController(title: "Error", message: "Se ha producido un error", preferredStyle: .alert)
@@ -48,10 +51,8 @@ class LoginViewModel: UIViewController {
     }
     
     @IBAction func RegisterButton(_ sender: Any) {
-        let storyBoard : UIStoryboard = UIStoryboard(name: "RegisterView", bundle:nil)
-        let nextViewController = storyBoard.instantiateViewController(withIdentifier: "RegisterViewID") as! RegisterViewModel
-        self.navigationController?.pushViewController(nextViewController, animated: true)
-        
+        //self.router.go2TabBar(initial: self)
+        self.router.go2Register(initial: self)
     }
     
     

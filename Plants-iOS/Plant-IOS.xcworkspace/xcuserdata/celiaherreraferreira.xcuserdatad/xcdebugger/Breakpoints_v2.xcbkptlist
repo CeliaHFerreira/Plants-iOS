@@ -7,16 +7,160 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "45F987C1-29F4-4168-9070-D2593C5EBC1F"
-            shouldBeEnabled = "Yes"
+            uuid = "31153418-FA55-4B91-9560-5C7ABA33CB5C"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Plant-IOS/Register/RegisterViewModel.swift"
+            filePath = "Plant-IOS/EnrolmentRouter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
+            landmarkName = "switchRootViewController(rootViewController:animated:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5D29FE82-F9FE-466D-8FFF-57C837445573"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Plant-IOS/EnrolmentRouter.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "31"
             endingLineNumber = "31"
-            landmarkName = "registerButton(_:)"
+            landmarkName = "go2TabBar(initial:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "5D29FE82-F9FE-466D-8FFF-57C837445573 - 8e43bc34c0dd55f4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Plant_IOS.EnrolmentRouter.go2TabBar(initial: __C.UIViewController) -&gt; ()"
+                  moduleName = "Plant-IOS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/celiaherreraferreira/Desktop/Master/Asignaturas/Proyectos/Entregas/IOS/Plants-iOS/Plants-iOS/Plant-IOS/EnrolmentRouter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "31"
+                  endingLineNumber = "31"
+                  offsetFromSymbolStart = "106">
+               </Location>
+               <Location
+                  uuid = "5D29FE82-F9FE-466D-8FFF-57C837445573 - 8e43bc34c0dd55f4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Plant_IOS.EnrolmentRouter.go2TabBar(initial: __C.UIViewController) -&gt; ()"
+                  moduleName = "Plant-IOS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/celiaherreraferreira/Desktop/Master/Asignaturas/Proyectos/Entregas/IOS/Plants-iOS/Plants-iOS/Plant-IOS/EnrolmentRouter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "31"
+                  endingLineNumber = "31"
+                  offsetFromSymbolStart = "950">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "020BA818-2BA3-4FCB-AFA0-5F16E667A913"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Plant-IOS/EnrolmentRouter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "go2Login(initial:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "020BA818-2BA3-4FCB-AFA0-5F16E667A913 - 7187ae9116033465"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Plant_IOS.EnrolmentRouter.go2Login(initial: __C.UIViewController) -&gt; ()"
+                  moduleName = "Plant-IOS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/celiaherreraferreira/Desktop/Master/Asignaturas/Proyectos/Entregas/IOS/Plants-iOS/Plants-iOS/Plant-IOS/EnrolmentRouter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "106">
+               </Location>
+               <Location
+                  uuid = "020BA818-2BA3-4FCB-AFA0-5F16E667A913 - 7187ae9116033465"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Plant_IOS.EnrolmentRouter.go2Login(initial: __C.UIViewController) -&gt; ()"
+                  moduleName = "Plant-IOS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/celiaherreraferreira/Desktop/Master/Asignaturas/Proyectos/Entregas/IOS/Plants-iOS/Plants-iOS/Plant-IOS/EnrolmentRouter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "415">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9A2DDA19-D634-4EDA-AD39-FBA96B9DB180"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Plant-IOS/ListPlants/ListPlantsViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
+            landmarkName = "tableView(_:cellForRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F44E63A3-EB1C-41BC-B9C8-D7CCD5024BAE"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Plant-IOS/Settings/SettingsViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "pressLogOut(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "99632644-1777-4E8C-B917-814C0FD05A66"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Plant-IOS/SceneDelegate.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "scene(_:willConnectTo:options:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

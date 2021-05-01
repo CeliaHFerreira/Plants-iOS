@@ -6,10 +6,12 @@
 //
 
 import UIKit
+import SwiftUI
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     
     var window: UIWindow?
+    var userIsNotLoged = false
     
     
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
@@ -17,7 +19,35 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let winScene = (scene as? UIWindowScene) else { return }
+        
+        if (UserDefaults.standard.bool(forKey: "isNotLogged") != nil){
+            let storyboard = UIStoryboard (name: "LoginView", bundle: nil)
+            let rootViewController = storyboard.instantiateViewController(withIdentifier: "NavigationLogin") as! UINavigationController
+            window = UIWindow(windowScene: winScene)
+            self.window?.rootViewController = rootViewController
+            window?.makeKeyAndVisible()
+        } else {
+            
+            
+            
+            let storyboard = UIStoryboard (name: "LoginView", bundle: nil)
+            let rootViewController = storyboard.instantiateViewController(identifier: "TabBarViewController") as TabBarViewController
+            rootViewController.selectedViewController = rootViewController.viewControllers?[0]
 
+            window = UIWindow(windowScene: winScene)
+            self.window?.rootViewController = rootViewController
+            window?.makeKeyAndVisible()
+            
+//            WithSwiftUI
+//            let tabBarView = tabBarUI()
+//            let host = UIHostingController(rootView: tabBarView)
+//            window = UIWindow(windowScene: winScene)
+//            self.window?.rootViewController = host
+//            window?.makeKeyAndVisible()
+            
+        }
+        
+        
         
     }
     

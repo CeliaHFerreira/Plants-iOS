@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Register View Model-->
+        <!--Register View Controller-->
         <scene sceneID="5iS-WK-eIc">
             <objects>
-                <viewController storyboardIdentifier="RegisterViewID" useStoryboardIdentifierAsRestorationIdentifier="YES" id="INH-Ch-JYu" customClass="RegisterViewModel" customModule="Plant_IOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RegisterViewID" id="INH-Ch-JYu" customClass="RegisterViewController" customModule="Plant_IOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8lM-XP-t9r">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -71,6 +71,7 @@
                             <constraint firstItem="kBa-eB-Uf1" firstAttribute="top" secondItem="bN7-iS-tnL" secondAttribute="top" id="yTg-Fm-WQX"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="o2y-td-9AI"/>
                     <connections>
                         <outlet property="emailText" destination="fnQ-Ay-aeh" id="tMa-Bl-WJB"/>
                         <outlet property="passwordText" destination="ds1-pr-UpH" id="uXE-aQ-nuM"/>
@@ -78,7 +79,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DHM-bX-V3N" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1407.2463768115942" y="24.776785714285712"/>
+            <point key="canvasLocation" x="2317.3913043478265" y="24.776785714285712"/>
         </scene>
     </scenes>
     <resources>

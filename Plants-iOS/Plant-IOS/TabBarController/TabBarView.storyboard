@@ -6,44 +6,25 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Tab Bar View Model-->
+        <!--TabBarViewController-->
         <scene sceneID="nrF-hC-vtL">
             <objects>
-                <tabBarController storyboardIdentifier="TabBarViewID" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="LLD-lt-TIU" customClass="TabBarViewModel" customModule="Plant_IOS" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="TabBarViewController" title="TabBarViewController" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="LLD-lt-TIU" customClass="TabBarViewController" customModule="Plant_IOS" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="0GK-9Y-ezB">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="d49-nL-O5S" kind="relationship" relationship="viewControllers" id="PUB-J7-xkl"/>
+                        <outlet property="mainTabbar" destination="0GK-9Y-ezB" id="L7H-1B-jzZ"/>
                         <segue destination="KdF-ty-06c" kind="relationship" relationship="viewControllers" id="px5-Fa-yMo"/>
-                        <segue destination="k1x-Ar-rEi" kind="relationship" relationship="viewControllers" id="nWw-aE-PlD"/>
+                        <segue destination="l07-E9-Uta" kind="relationship" relationship="viewControllers" id="an7-nj-WyY"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YGQ-uJ-PKg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-184.05797101449278" y="35.491071428571423"/>
-        </scene>
-        <!--SettingsViewID-->
-        <scene sceneID="3ry-UT-3f6">
-            <objects>
-                <viewControllerPlaceholder storyboardIdentifier="SettingsViewID" storyboardName="SettingsView" referencedIdentifier="SettingsViewID" id="d49-nL-O5S" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="r6P-gz-oEw"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="AOw-TA-Reh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="377" y="-58"/>
-        </scene>
-        <!--ListPlantsID-->
-        <scene sceneID="DQu-GY-Yw6">
-            <objects>
-                <viewControllerPlaceholder storyboardIdentifier="ListPlantsID" storyboardName="ListPlantsView" referencedIdentifier="ListPlantsID" id="k1x-Ar-rEi" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="wzn-qd-cmi"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="oWF-Ax-PcZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="518" y="58"/>
         </scene>
         <!--MapViewID-->
         <scene sceneID="zWW-7b-bk1">
@@ -54,6 +35,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Y8n-N2-oVx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="358" y="127"/>
+        </scene>
+        <!--ListPlantsID-->
+        <scene sceneID="TOR-u4-o5H">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ListPlantsView" referencedIdentifier="ListPlantsID" id="l07-E9-Uta" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="Tbm-tp-jo6"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yy3-xP-N7K" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="391" y="-10"/>
         </scene>
     </scenes>
 </document>

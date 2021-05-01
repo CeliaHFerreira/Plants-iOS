@@ -1,25 +1,23 @@
 //
-//  ListPlantsViewModel.swift
-//  Plants-iOS
+//  DetailPlantViewController.swift
+//  Plant-IOS
 //
-//  Created by Celia Herrera Ferreira on 10/04/2021.
+//  Created by Celia Herrera Ferreira on 26/04/2021.
 //
 
-import Foundation
-
-
-class ListPlantsViewModel {
-  
-    var refresData = { () -> () in }
+import UIKit
+class DetailPlantViewController: UIViewController {
     
-    var dataArray: [Plant] = [] {
-        didSet {
-            refresData()
-        }
+    private let plantID : Int = 0
+    
+
+
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
     }
     
-    //Obtenemos los datos de la api 
-    func retrievePlantsList() {
+    func retrievePlantList() {
         guard let url = URL(string: "https:\\") else { return } //Falta meter url plantas
         URLSession.shared.dataTask(with: url) { (data, response, error) in
         
@@ -27,11 +25,13 @@ class ListPlantsViewModel {
             //Serializamos los datos
             do {
                 let decoder = JSONDecoder()
-                self.dataArray = try decoder.decode([Plant].self, from: json)
+                //self.dataArray = try decoder.decode([Plant].self, from: json)
             } catch let error {
                 print("Ha ocurrido un error: \(error.localizedDescription)")
             }
         }.resume()
     }
+    
 }
+
 

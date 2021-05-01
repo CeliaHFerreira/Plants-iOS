@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Settings View Model-->
+        <!--Settings View Controller-->
         <scene sceneID="5G8-6B-fe9">
             <objects>
-                <viewController storyboardIdentifier="SettingsViewID" useStoryboardIdentifierAsRestorationIdentifier="YES" id="TA7-BK-hYZ" customClass="SettingsViewModel" customModule="Plant_IOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SettingsViewID" useStoryboardIdentifierAsRestorationIdentifier="YES" id="TA7-BK-hYZ" customClass="SettingsViewController" customModule="Plant_IOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" restorationIdentifier="SettingsViewID" id="uq3-hg-Ern">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RegisterViewController" customModule="Plant_IOS" customModuleProvider="target">
+            <connections>
+                <outlet property="emailText" destination="A5L-q4-Mld" id="ew4-VM-O4c"/>
+                <outlet property="passwordText" destination="377-XE-smh" id="o6x-pI-54d"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="2GF-64-bRP">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eJv-kS-04e">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="28" translatesAutoresizingMaskIntoConstraints="NO" id="yg9-OJ-FPy">
+                            <rect key="frame" x="20" y="40" width="374" height="100"/>
+                            <subviews>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="A5L-q4-Mld">
+                                    <rect key="frame" x="0.0" y="0.0" width="374" height="36"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="36" id="GA4-Qc-hfG"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="377-XE-smh">
+                                    <rect key="frame" x="0.0" y="64" width="374" height="36"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="36" id="7x1-kf-IqQ"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="100" id="6Hk-hn-2tc"/>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="NOK-wX-hhD"/>
+                                <constraint firstItem="377-XE-smh" firstAttribute="top" secondItem="A5L-q4-Mld" secondAttribute="bottom" constant="28" id="vu9-mc-bu4"/>
+                            </constraints>
+                        </stackView>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V0z-Pl-1Ej">
+                            <rect key="frame" x="168" y="204" width="78" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" title="Registrarse"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="yg9-OJ-FPy" firstAttribute="leading" secondItem="eJv-kS-04e" secondAttribute="leading" constant="20" id="K1b-Mq-FkO"/>
+                        <constraint firstAttribute="trailing" secondItem="yg9-OJ-FPy" secondAttribute="trailing" constant="20" id="eY5-vQ-Eio"/>
+                        <constraint firstItem="yg9-OJ-FPy" firstAttribute="top" secondItem="eJv-kS-04e" secondAttribute="top" constant="40" id="igg-Lj-xrI"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="a3G-aj-1IX"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="eJv-kS-04e" firstAttribute="leading" secondItem="a3G-aj-1IX" secondAttribute="leading" id="24e-Za-reX"/>
+                <constraint firstItem="eJv-kS-04e" firstAttribute="top" secondItem="a3G-aj-1IX" secondAttribute="top" id="G1m-3F-lRh"/>
+                <constraint firstItem="a3G-aj-1IX" firstAttribute="trailing" secondItem="eJv-kS-04e" secondAttribute="trailing" id="hGV-qc-xjh"/>
+                <constraint firstItem="a3G-aj-1IX" firstAttribute="bottom" secondItem="eJv-kS-04e" secondAttribute="bottom" id="xYP-SC-2yS"/>
+            </constraints>
+            <point key="canvasLocation" x="-313" y="711"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
