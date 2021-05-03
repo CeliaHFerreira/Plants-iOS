@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2D1014AA263CA6CB0005FD7A /* ListPlants.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D1014A9263CA6CB0005FD7A /* ListPlants.xib */; };
 		2D1014AE263CA9190005FD7A /* ListPlantCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D1014AD263CA9190005FD7A /* ListPlantCell.xib */; };
+		2D379823263DFFEE003F082E /* ServerCalls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D379822263DFFEE003F082E /* ServerCalls.swift */; };
 		2D51D777263728050034AB60 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D51D776263728050034AB60 /* LoginViewController.swift */; };
 		2D51D77A26372CBE0034AB60 /* ListPlantsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D51D77926372CBE0034AB60 /* ListPlantsViewController.swift */; };
 		2D51D78E263734A20034AB60 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D51D78D263734A20034AB60 /* RegisterViewController.swift */; };
@@ -50,6 +51,7 @@
 /* Begin PBXFileReference section */
 		2D1014A9263CA6CB0005FD7A /* ListPlants.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListPlants.xib; sourceTree = "<group>"; };
 		2D1014AD263CA9190005FD7A /* ListPlantCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListPlantCell.xib; sourceTree = "<group>"; };
+		2D379822263DFFEE003F082E /* ServerCalls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerCalls.swift; sourceTree = "<group>"; };
 		2D51D776263728050034AB60 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		2D51D77926372CBE0034AB60 /* ListPlantsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPlantsViewController.swift; sourceTree = "<group>"; };
 		2D51D78D263734A20034AB60 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
@@ -149,6 +151,7 @@
 				2D6376322621CA6A0091AAB1 /* AppDelegate.swift */,
 				2D6376342621CA6A0091AAB1 /* SceneDelegate.swift */,
 				2D6376362621CA6A0091AAB1 /* ViewController.swift */,
+				2D379822263DFFEE003F082E /* ServerCalls.swift */,
 				2DF7954C2622475500C175C4 /* EnrolmentRouter.swift */,
 				2D1014AC263CA8F50005FD7A /* ListPlantCell */,
 				2DF795B62624D39200C175C4 /* TabBarController */,
@@ -383,6 +386,7 @@
 				2DF7954D2622475500C175C4 /* EnrolmentRouter.swift in Sources */,
 				2DE6DC952621DA64004AF22D /* ListPlantsModel.swift in Sources */,
 				2DAB84F3263D9A2700369797 /* ListPlantCell.swift in Sources */,
+				2D379823263DFFEE003F082E /* ServerCalls.swift in Sources */,
 				2D8002EE263C8A0A0083FE81 /* MapUI.swift in Sources */,
 				2D8002EB263C898F0083FE81 /* ListUI.swift in Sources */,
 				2DE6DC9A2621DA64004AF22D /* RegisterModel.swift in Sources */,

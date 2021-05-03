@@ -7,22 +7,27 @@
 
 import Foundation
 
-class Plant: Codable {
-    let id: Int
-    let commonName: String
-    let slug: String
-    let scientificName: String
-    let year: Int
-    let bibliography: String
-    let author: String
-    let status: String
-    let rank: String
-    let familyCommonName: String
-    let genusId: Int
-    let imageUrl: String
-    let synonyms: [String]
-    let genus: String
-    let family: String
+struct Plants: Codable {
+    let data: [PlantsBody]
+}
+
+struct PlantsBody: Codable {
+    let id: Int?
+    let commonName: String?
+    let slug: String?
+    let scientificName: String?
+    let year: Int?
+    let bibliography: String?
+    let author: String?
+    let status: String?
+    let rank: String?
+    let familyCommonName: String?
+    let genusId: Int?
+    let imageUrl: String?
+    let synonyms: [String?]
+    let genus: String?
+    let family: String?
+    
     
     enum CodingKeys: String, CodingKey {
         case id
@@ -41,4 +46,5 @@ class Plant: Codable {
         case genus
         case family
     }
+    
 }

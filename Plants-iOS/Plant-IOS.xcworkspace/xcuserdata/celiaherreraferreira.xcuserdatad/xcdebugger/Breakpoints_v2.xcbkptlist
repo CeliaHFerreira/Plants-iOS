@@ -126,8 +126,8 @@
             filePath = "Plant-IOS/ListPlants/ListPlantsViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "55"
-            endingLineNumber = "55"
+            startingLineNumber = "64"
+            endingLineNumber = "64"
             landmarkName = "tableView(_:cellForRowAt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -151,16 +151,80 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "99632644-1777-4E8C-B917-814C0FD05A66"
+            uuid = "1AB0D195-F077-41A4-B80C-8DECFFFCC5B7"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Plant-IOS/SceneDelegate.swift"
+            filePath = "Plant-IOS/ListPlants/ListPlantsViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "22"
-            endingLineNumber = "22"
-            landmarkName = "scene(_:willConnectTo:options:)"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "1AB0D195-F077-41A4-B80C-8DECFFFCC5B7 - 4901e6dae64997e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Plant_IOS.ListPlantsViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "Plant-IOS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/celiaherreraferreira/Desktop/Master/Asignaturas/Proyectos/Entregas/IOS/Plants-iOS/Plants-iOS/Plant-IOS/ListPlants/ListPlantsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "1025">
+               </Location>
+               <Location
+                  uuid = "1AB0D195-F077-41A4-B80C-8DECFFFCC5B7 - 62483892ad81a326"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Plant_IOS.Plants) -&gt; () in Plant_IOS.ListPlantsViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "Plant-IOS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/celiaherreraferreira/Desktop/Master/Asignaturas/Proyectos/Entregas/IOS/Plants-iOS/Plants-iOS/Plant-IOS/ListPlants/ListPlantsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "87">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D546931C-D9BB-4F18-BD90-E30CB95554AA"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Plant-IOS/ServerCalls.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "retrievePlantList(success:failure:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C2D52D58-B510-498B-9B12-B83D15BCF49F"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Plant-IOS/ServerCalls.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "retrievePlantList(success:failure:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

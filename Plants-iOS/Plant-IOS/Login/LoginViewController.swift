@@ -16,6 +16,7 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var passwordText: UITextField!
     
     let router = EnrolmentRouter()
+    let server = ServerCalls()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -51,8 +52,9 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func RegisterButton(_ sender: Any) {
-        //self.router.go2TabBar(initial: self)
-        self.router.go2Register(initial: self)
+        //server.retrievePlantList()
+        self.router.go2TabBar(initial: self)
+        //self.router.go2Register(initial: self)
     }
     
     

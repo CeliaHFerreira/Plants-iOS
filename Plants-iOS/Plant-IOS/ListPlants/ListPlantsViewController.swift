@@ -11,15 +11,22 @@ import UIKit
 class ListPlantsViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
-    
+    let server = ServerCalls()
+    var plantList: [PlantsBody] = []
 
     // Returning the xib file after instantiating it
     override func viewDidLoad() {
+        
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
         tableView.register(UINib(nibName: "ListPlantCell", bundle: nil), forCellReuseIdentifier: "ListPlantCell")
-
+        server.retrievePlantList { (plants) in
+            self.plantList = plants.data
+            self.tableView.reloadData()
+        } failure: { (_: Error?) in
+            print("Ha ocurrido un error")
+        }
     }
     
     //    func retrievePlantsList() {
@@ -53,11 +60,19 @@ extension ListPlantsViewController: UITableViewDelegate, UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell( withIdentifier: "ListPlantCell", for: indexPath) as! ListPlantCell
-        cell.plantName.text = "Nombre"
-        cell.plantTaxonomy.text = "Taxonomy"
-        cell.plantCName.text = "NombreCientifico"
-        cell.plantFamily.text = "La family"
-        cell.plantImage = UIImageView(image: UIImage(systemName: "leaf.arrow.triangle.circlepath"))
+        if let a = plantList.first {
+            cell.plantName.text = plantList == nil ? "" : plantList[indexPath.row].commonName
+            cell.plantTaxonomy.text = "Taxonomy"
+            cell.plantCName.text = "NombreCientifico"
+            cell.plantFamily.text = "La family"
+            cell.plantImage = UIImageView(image: UIImage(systemName: "leaf.arrow.triangle.circlepath"))
+        } else {
+            cell.plantName.text = "hola"
+            cell.plantTaxonomy.text = "Taxonomy"
+            cell.plantCName.text = "NombreCientifico"
+            cell.plantFamily.text = "La family"
+            cell.plantImage = UIImageView(image: UIImage(systemName: "leaf.arrow.triangle.circlepath"))
+        }
         return cell
     }
     
